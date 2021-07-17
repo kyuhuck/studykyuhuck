@@ -16,7 +16,7 @@
         <a>{{라디오}}</a>-->
 
 
-        <a v-for ="mneulist in mneulist" :key="mneulist">{{mneulist}} </a>
+        <a  v-for ="mneulist_json in mneulist_json" :key="mneulist_json"  v-bind:href="mneulist_json.url" >    {{mneulist_json.name}} </a>
 
     </div>
 
@@ -31,12 +31,23 @@
                 티비 :  'SBSTV',
                 라디오 : 'SBS라디오',
                 mneulist : ['SBS홈','SBSTV','SBS라디오2' ],
+                mneulist_json : [
+                    {
+                        "url" : "./",
+                        "name" : "sbs홈"
+                    },
+                    {
+                        "url" : "./tv",
+                        "name" : "sbstv"
+                    },
+                    {
+                        "url" : "./radio",
+                        "name" : "sbs라디오"
+                    }
 
+                ]
             }
-
         }
-
-
     }
 
 </script>

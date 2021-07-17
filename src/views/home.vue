@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>여기는sbs 홈입니다</h1>
+        <h1>여기홈입니다</h1>
     </div>
 
 </template>
